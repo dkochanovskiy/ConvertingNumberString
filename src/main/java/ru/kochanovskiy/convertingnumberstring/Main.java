@@ -12,6 +12,8 @@ public class Main {
 
     public static void main(String[] args) {
 
+//        int s = Integer.parseInt(String.valueOf(ch1));
+
         while (true){
 
             /**
@@ -26,13 +28,11 @@ public class Main {
              */
             if(enteredNumber > 0){
                 System.out.println(decimalParser(Integer.toString(enteredNumber)) + " в десятиричной системе;");
-                System.out.println(decimalParser(octalConversion(enteredNumber)) + " в восьмеричной системе;");
+//                System.out.println(decimalParser(octalConversion(enteredNumber)) + " в восьмеричной системе;");
                 System.out.println("");
             } else {
                 System.out.println("Введите целое положительное число!");
             }
         }
-
     }
-
 }
