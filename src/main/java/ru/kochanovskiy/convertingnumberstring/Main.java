@@ -7,6 +7,8 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Parser parser = new Parser();
+
         while (true){
 
             /**
@@ -21,8 +23,8 @@ public class Main {
              * Output of result
              */
             if(enteredNumber > 0){
-                System.out.println(decimalParser(Integer.toString(enteredNumber)) + " в десятиричной системе счисления;");
-                System.out.println(decimalParser(octalConversion(enteredNumber)) + " в восьмеричной системе счисления;");
+                System.out.println(parser.decimalParser(Integer.toString(enteredNumber)) + " в десятиричной системе счисления;");
+                System.out.println(parser.decimalParser(parser.octalConversion(enteredNumber)) + " в восьмеричной системе счисления;");
 
 //                System.out.println(decimalParser(Integer.toString(enteredNumber)) + " in decimal notation;");
 //                System.out.println(decimalParser(octalConversion(enteredNumber)) + " in octal notation;");

@@ -76,7 +76,7 @@ class Parser {
     /**
      * Verbal number notation in decimal notation
      */
-    static String decimalParser(String enteredString){
+    String decimalParser(String enteredString){
 
         char[] arrayOfDigits = enteredString.toCharArray();
         if(enteredString.length() == 1){
@@ -94,7 +94,7 @@ class Parser {
     /**
      * Conversion to octal notation
      */
-    static String octalConversion(int convertNumber){
+    String octalConversion(int convertNumber){
         int notation = 8;
         return Integer.toString(convertNumber, notation);
     }
