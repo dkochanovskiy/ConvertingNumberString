@@ -1,6 +1,6 @@
 package ru.kochanovskiy.convertingnumberstring;
 
-class Parser {
+public class Parser {
 
     private static String outputString = null;
 
@@ -76,7 +76,7 @@ class Parser {
     /**
      * Verbal number notation in decimal notation
      */
-    String decimalParser(String enteredString){
+    public String decimalParser(String enteredString){
 
         char[] arrayOfDigits = enteredString.toCharArray();
         if(enteredString.length() == 1){
@@ -94,7 +94,7 @@ class Parser {
     /**
      * Conversion to octal notation
      */
-    String octalConversion(int convertNumber){
+    public String octalConversion(int convertNumber){
         int notation = 8;
         return Integer.toString(convertNumber, notation);
     }
